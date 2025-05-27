@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="sticky max-lg:px-4 bg-primary z-20 top-0 flex max-lg:justify-between items-center h-16 lg:border-l-0 max-lg:border-y lg:border border-accent">
+    <div className="sticky max-lg:px-4 bg-primary z-20 top-0 flex max-lg:justify-between items-center h-16 lg:border-l-0 max-lg:border-b lg:border border-accent">
       <div className="lg:px-8 h-full flex items-center w-64 lg:border-x border-accent">
         <h1 className="font-bold">Shayan Abedi</h1>
       </div>
