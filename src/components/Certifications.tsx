@@ -32,7 +32,7 @@ export default function Certifications() {
     <div className="margin relative">
       <ScrollTo targetId="certifications" />
       <SubHeading content="Certifications" />
-      <div className="flex gap-4">
+      <div className="flex max-sm:flex-col gap-4">
         <CertItem
           description="Certified Associate in Project Management • 2024"
           title="PMI CAPM"

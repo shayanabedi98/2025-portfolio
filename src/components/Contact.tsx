@@ -50,7 +50,7 @@ export default function Contact() {
     <div className="margin mb-24 relative">
       <ScrollTo targetId="contact" />
       <SubHeading content="Contact" />
-      <div className="item flex gap-4">
+      <div className="item flex max-sm:flex-col gap-4">
         <div className="w-full gap-2 flex flex-col">
           <p className="text-lg mb-4">
             I&apos;m currently looking for full-time developer opportunities.

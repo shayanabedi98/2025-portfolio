@@ -3,7 +3,7 @@ export default function SoftSkills() {
     <div className="margin relative">
       <ScrollTo targetId="soft" />
       <SubHeading content="Soft Skills" />
-      <div className="flex gap-4">
+      <div className="flex max-sm:flex-col gap-4">
         <SoftSkillItem
           description="Strong communicator who works seamlessly across tech and non-tech teams. Experienced in balancing business needs with scalable technical execution."
           title="Communication & Collaboration"

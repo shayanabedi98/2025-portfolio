@@ -18,7 +18,7 @@ function Project({
 
   return (
     <div className="flex flex-col w-full">
-      <div className="w-full relative h-72 flex items-center">
+      <div className="w-full relative max-[375px]:h-52 max-[400px]:h-60 max-sm:h-72 max-md:h-96 max-xl:h-[550px] xl:h-72 flex items-center">
         <button
           onClick={() =>
             setImageIndex((prevIndex) => (prevIndex + 1) % images.length)
@@ -43,7 +43,14 @@ function Project({
           className="object-cover h-full w-full rounded-t-lg"
         />
       </div>
-      <div className="item flex flex-col gap-3 rounded-t-none min-h-72">
+      <div
+        className="item flex flex-col gap-3 max-xl:min-h-52 xl:min-h-72"
+        style={{
+          borderTopLeftRadius: 0,
+          borderTopRightRadius: 0,
+          borderTop: "none",
+        }}
+      >
         <h3>{title}</h3>
         <p className="text-neutral">{description}</p>
         <div className="flex items-center flex-wrap gap-2">
@@ -66,7 +73,7 @@ export default function FeaturedProjects() {
     <div className="flex flex-col relative margin">
       <ScrollTo targetId="projects" />
       <SubHeading content="Featured Projects" />
-      <div className="grid grid-cols-2 w-full gap-4">
+      <div className="grid grid-cols-1 xl:grid-cols-2 w-full gap-4">
         <Project
           images={[
             "/projects/stonefinder/1.png",

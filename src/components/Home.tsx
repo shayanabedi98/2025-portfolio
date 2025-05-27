@@ -3,10 +3,10 @@ import ScrollTo from "./ScrollTo";
 
 export default function Home() {
   return (
-    <div className="flex flex-col margin gap-3">
+    <div className="flex flex-col max-md:mt-10 md:margin gap-3">
       <ScrollTo targetId="home" />
       <h1 className="text-5xl font-extrabold">Shayan Abedi</h1>
-      <p className="text-xl max-w-[620px] w-full text-neutral">
+      <p className="text-lg sm:text-xl max-w-[620px] w-full text-neutral">
         Full-stack developer with 2+ years of experience building scalable,
         production-ready web platforms. Proven success launching SaaS and
         marketplace products from the ground up using modern frameworks like

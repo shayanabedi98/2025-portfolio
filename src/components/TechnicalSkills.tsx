@@ -3,7 +3,7 @@ import SubHeading from "./SubHeading";
 
 function Skill({ title, list }: { title: string; list: string[] }) {
   return (
-    <div className="flex flex-col gap-3 min-h-52 w-full item">
+    <div className="flex flex-col gap-3 sm:min-h-52 w-full item">
       <h3 className="">{title}</h3>
       <div className="flex items-center flex-wrap gap-2">
         {list.map((item: string) => (
@@ -24,7 +24,7 @@ export default function TechnicalSkills() {
     <div className="margin relative">
       <ScrollTo targetId="skills" />
       <SubHeading content="Technical Skills" />
-      <div className="gap-4 grid grid-cols-4">
+      <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
         <Skill
           title="Programming Languages"
           list={["JavaScript", "TypeScript", "Python", "Go"]}
@@ -48,7 +48,7 @@ export default function TechnicalSkills() {
           title="DevOps & Tools"
           list={["AWS S3 & Amplify", "CloudFront", "Docker", "Vercel"]}
         />
-        <div className="col-span-2">
+        <div className="xl:col-span-2">
           <Skill
             title="APIs & Integrations"
             list={[
@@ -61,7 +61,7 @@ export default function TechnicalSkills() {
             ]}
           />
         </div>
-        <div className="col-span-2">
+        <div className="xl:col-span-2">
           <Skill
             title="AI & Productivity"
             list={[

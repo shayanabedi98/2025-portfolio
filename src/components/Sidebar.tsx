@@ -9,7 +9,7 @@ function SidebarNavItem({ href, content }: { href: string; content: string }) {
 export default function Sidebar() {
 
   return (
-    <div className="w-64 justify-between fixed left-0 border-y-0 h-[calc(100vh-64px)] flex flex-col gap-1 py-10 px-8 border-accent border-x">
+    <div className="w-64 max-lg:hidden justify-between fixed left-0 border-y-0 h-[calc(100vh-64px)] flex flex-col gap-1 py-10 px-8 border-accent border-x">
       <div className="flex flex-col gap-1 ">
         <h1 className="font-bold text-xl">Navigation</h1>
         <SidebarNavItem href="/#home" content="home" />

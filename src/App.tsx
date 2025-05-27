@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <div className="flex flex-1">
         <Sidebar />
-        <div className="pl-64 w-full">
+        <div className="lg:pl-64 w-full">
           <Container>
             <Home />
             <TechnicalSkills />
