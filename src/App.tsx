@@ -1,6 +1,10 @@
+import About from "./components/About";
 import Container from "./components/Container";
+import Experience from "./components/Experience";
+import FeaturedProjects from "./components/FeaturedProjects";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import TechnicalSkills from "./components/TechnicalSkills";
 
 function App() {
   return (
@@ -10,7 +14,11 @@ function App() {
         <Sidebar />
         <div className="pl-64 w-full">
           <Container>
-            <h1>Shayan</h1>
+            <About />
+            <TechnicalSkills />
+            <Experience />
+            <FeaturedProjects />
+            <div className="margin" id="certifications"></div>
           </Container>
         </div>
       </div>

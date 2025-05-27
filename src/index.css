@@ -1,20 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 @theme {
   --color-primary: #09090b;
   --color-secondary: #fafafa;
   --color-accent: #27272a;
   --color-neutral: #9f9fa8;
-  --color-base-100: #FFFFFF;
-  
+  --color-base-100: #ffffff;
+
+  --font-family-inter: "Inter", sans-serif;
   --font-family-sans: sans-serif;
 }
 
+@layer base {
+  h3 {
+    @apply font-semibold text-xl;
+  }
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  /* font-weight: 400; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  @apply font-family-sans bg-primary text-secondary;
+  @apply font-family-inter bg-primary text-secondary;
+}
+
+.margin {
+  @apply mt-24;
+}
+
+.item {
+  @apply px-6 pb-4 py-6 rounded-lg border border-accent;
 }
