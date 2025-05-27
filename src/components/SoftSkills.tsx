@@ -28,7 +28,7 @@ function SoftSkillItem({
   description: string;
 }) {
   return (
-    <div className="item flex flex-col gap-3">
+    <div className="item w-full flex flex-col gap-3">
       <h3>{title}</h3>
       <p className="text-neutral">{description}</p>
     </div>
