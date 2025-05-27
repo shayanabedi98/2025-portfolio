@@ -7,7 +7,6 @@ function SidebarNavItem({ href, content }: { href: string; content: string }) {
 }
 
 export default function Sidebar() {
-  // const [pathname, setPathname] = useState(window.location.pathname);
 
   return (
     <div className="w-64 justify-between fixed left-0 border-y-0 h-[calc(100vh-64px)] flex flex-col gap-1 py-10 px-8 border-accent border-x">
