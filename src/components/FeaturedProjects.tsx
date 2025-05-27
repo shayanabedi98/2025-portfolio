@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SubHeading from "./SubHeading";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import ScrollTo from "./ScrollTo";
 
 function Project({
   images,
@@ -62,7 +63,8 @@ function Project({
 
 export default function FeaturedProjects() {
   return (
-    <div className="flex flex-col margin" id="projects">
+    <div className="flex flex-col relative margin">
+      <ScrollTo targetId="projects" />
       <SubHeading content="Featured Projects" />
       <div className="grid grid-cols-2 w-full gap-4">
         <Project

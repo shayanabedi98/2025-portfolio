@@ -1,11 +1,11 @@
 import { MoveRight } from "lucide-react";
+import ScrollTo from "./ScrollTo";
 
-export default function About() {
+export default function Home() {
   return (
-    <div className="flex flex-col gap-3">
-      <h1 id="about" className="margin text-5xl font-extrabold">
-        Shayan Abedi
-      </h1>
+    <div className="flex flex-col margin gap-3">
+      <ScrollTo targetId="home" />
+      <h1 className="text-5xl font-extrabold">Shayan Abedi</h1>
       <p className="text-xl max-w-[620px] w-full text-neutral">
         Full-stack developer with 2+ years of experience building scalable,
         production-ready web platforms. Proven success launching SaaS and

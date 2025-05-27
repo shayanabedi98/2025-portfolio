@@ -1,3 +1,4 @@
+import ScrollTo from "./ScrollTo";
 import SubHeading from "./SubHeading";
 
 function Skill({ title, list }: { title: string; list: string[] }) {
@@ -20,7 +21,8 @@ function Skill({ title, list }: { title: string; list: string[] }) {
 
 export default function TechnicalSkills() {
   return (
-    <div className="margin" id="skills">
+    <div className="margin relative">
+      <ScrollTo targetId="skills" />
       <SubHeading content="Technical Skills" />
       <div className="gap-4 grid grid-cols-4">
         <Skill

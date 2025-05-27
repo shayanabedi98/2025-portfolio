@@ -1,3 +1,4 @@
+import ScrollTo from "./ScrollTo";
 import SubHeading from "./SubHeading";
 
 function ExperienceItem({
@@ -26,7 +27,8 @@ function ExperienceItem({
 
 export default function Experience() {
   return (
-    <div className="margin" id="experience">
+    <div className="margin relative">
+      <ScrollTo targetId="experience" />
       <SubHeading content="Professional Experience & Projects" />
       <div className="flex flex-col gap-6">
         <ExperienceItem

@@ -30,6 +30,16 @@ html {
 body {
   @apply font-family-inter bg-primary text-secondary;
 }
+label {
+  @apply text-secondary text-sm;
+}
+input {
+  @apply text-secondary text-[16px] lg:text-sm border border-accent rounded-lg px-2 py-2;
+}
+
+textarea {
+  @apply text-secondary text-[16px] lg:text-sm border border-accent rounded-lg px-2 py-2 resize-none h-32;
+}
 
 .margin {
   @apply mt-24;
