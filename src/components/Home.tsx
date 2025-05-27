@@ -3,7 +3,7 @@ import ScrollTo from "./ScrollTo";
 
 export default function Home() {
   return (
-    <div className="flex flex-col max-md:mt-10 md:margin gap-3">
+    <div className="flex flex-col max-md:mt-10 md:mt-16 gap-3">
       <ScrollTo targetId="home" />
       <h1 className="text-5xl font-extrabold">Shayan Abedi</h1>
       <p className="text-lg sm:text-xl max-w-[620px] w-full text-neutral">
