@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function SidebarNavItem({ href, content }: { href: string; content: string }) {
   return (
     <a href={href} className="rounded-lg py-2 px-2 lg:hover:bg-accent">
