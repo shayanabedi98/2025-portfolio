@@ -1,23 +1,25 @@
-import { useState } from "react";
+import {useState} from "react";
 import SubHeading from "./SubHeading";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import {ChevronLeft, ChevronRight} from "lucide-react";
 import ScrollTo from "./ScrollTo";
 
 function Project({
   images,
   title,
   description,
+  href,
   technologies,
 }: {
   images: string[];
   title: string;
   description: string;
+  href: string;
   technologies: string[];
 }) {
   const [imageIndex, setImageIndex] = useState(0);
 
   return (
-    <div className="flex flex-col w-full">
+    <a href={href} target="_blank" className="flex flex-col w-full">
       <div className="w-full relative max-[375px]:h-52 max-[400px]:h-60 max-sm:h-72 max-md:h-96 max-xl:h-[550px] xl:h-72 flex items-center">
         <button
           onClick={() =>
@@ -64,7 +66,7 @@ function Project({
           ))}
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 
@@ -75,6 +77,7 @@ export default function FeaturedProjects() {
       <SubHeading content="Featured Projects" />
       <div className="grid grid-cols-1 xl:grid-cols-2 w-full gap-4">
         <Project
+          href="https://stonefinder.io"
           images={[
             "/projects/stonefinder/1.png",
             "/projects/stonefinder/2.png",
@@ -105,6 +108,7 @@ export default function FeaturedProjects() {
         />
 
         <Project
+          href="https://beagle-server.vercel.app/"
           images={[
             "/projects/woof/1.png",
             "/projects/woof/2.png",
