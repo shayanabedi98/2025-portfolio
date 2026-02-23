@@ -32,6 +32,20 @@ export default function Experience() {
       <SubHeading content="Professional Experience & Projects" />
       <div className="flex flex-col gap-6">
         <ExperienceItem
+          title="Software Engineer & PM at Liftoff"
+          dateRange="July 2025 - Present"
+          list={[
+            "Ship and maintain production features across onboarding, workouts, nutrition, and growth.",
+            "Design and run A/B experiments with Statsig to drive activation, retention, and revenue.",
+            "Build and evolve backend services using tRPC, Prisma, and Postgres (Supabase).",
+            "Optimize database queries and APIs for high-traffic, real-world usage.",
+            "Monitor production stability and debug issues using Sentry.",
+            "Collaborate closely with product, design, and engineering partners using Notion for PRDs and planning.",
+            "Mentor interns and review PRs to uphold code quality standards.",
+            "Influence architectural decisions around performance and feature ownership.",
+          ]}
+        />
+        <ExperienceItem
           title="Founder & Full-Stack Developer at StoneFinder.io"
           dateRange="Sep 2024 - Present"
           list={[
@@ -40,7 +54,7 @@ export default function Experience() {
             "Integrated Stripe billing with webhooks, vendor analytics via Chart.js, and tiered subscription model.",
             "Implemented image uploads via AWS S3 and CDN with CloudFront.",
             "Used Google Places API + Haversine formula for geolocation-based listings.",
-            "Added AI chatbot powered by Gemini 1.5 Flash API to assist users.",
+            "Added AI chatbot powered by Gemini 2.5 Flash API to assist users.",
             "Grew to 30+ posted stone slabs from 3+ active vendors and continuing to scale.",
           ]}
         />

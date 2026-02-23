@@ -27,11 +27,20 @@ export default function TechnicalSkills() {
       <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
         <Skill
           title="Programming Languages"
-          list={["JavaScript", "TypeScript", "Python", "Go"]}
+          list={["JavaScript", "TypeScript", "Python"]}
         />
         <Skill
-          title="Frontend"
-          list={["React", "Next.js (App Router)", "TailwindCSS"]}
+          title="Frontend & Design"
+          list={[
+            "React",
+            "React Native",
+            "Zustand",
+            "Expo",
+            "Next.js (App Router)",
+            "TailwindCSS",
+            "Figma",
+            "Rive",
+          ]}
         />
         <Skill
           title="Backend & Database"
@@ -40,13 +49,25 @@ export default function TechnicalSkills() {
             "Express.js",
             "Prisma",
             "PostgreSQL",
+            "pgAdmin",
             "MongoDB",
+            "tRPC",
             "Supabase",
+            "Neon",
           ]}
         />
         <Skill
-          title="DevOps & Tools"
-          list={["AWS S3 & Amplify", "CloudFront", "Docker", "Vercel"]}
+          title="DevOps & Other Tools"
+          list={[
+            "Git",
+            "AWS S3 & Amplify",
+            "CloudFront",
+            "Docker",
+            "Vercel",
+            "Sentry",
+            "Statsig",
+            "Notion",
+          ]}
         />
         <div className="xl:col-span-2">
           <Skill
@@ -66,11 +87,10 @@ export default function TechnicalSkills() {
             title="AI & Productivity"
             list={[
               "GitHub Copilot",
-              "GPT",
-              "Claude",
+              "Cursor",
+              "Codex",
+              "Claude Code",
               "Gemini",
-              "Perplexity",
-              "V0",
             ]}
           />
         </div>
