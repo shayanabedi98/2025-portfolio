@@ -20,10 +20,10 @@ export default function Sidebar() {
         {/* <SidebarNavItem href="/#contact" content="Contact" /> */}
       </div>
       <div className="flex flex-col gap-1">
-        <p className="font-semibold text-sm">Looking for a developer?</p>
+        {/* <p className="font-semibold text-sm">Looking for a developer?</p>
         <p className="text-neutral text-xs">
           I&apos;m currently available for full-time positions.
-        </p>
+        </p> */}
         <a href="#contact">
           <button className="cursor-pointer rounded-lg mt-2 lg:hover:bg-neutral-300 text-primary bg-secondary w-28 py-2">
             Contact Me
